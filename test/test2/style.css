@@ -1,0 +1,15 @@
+﻿@import url('main.css'); /* Подключение стиля главного меню меню */
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+.list-unstyled li {
+    padding-top: 20px;
+}
+
+/* делаем ссылку некликабельной */
+.disabled a {
+    pointer-events: none;
+}
