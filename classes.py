@@ -2,7 +2,7 @@ class Person:
 
     def __init__(self, name, age):
         self.name = name
-        self.__age = 20
+        self.__age = age
 
     def print_info(self):
         print(f'Name: {self.name}, Age: {self.__age}')
@@ -29,4 +29,12 @@ class Person:
 
 
 class Employee(Person):
-    pass
+    def __init__(self, name, age, company):
+        super().__init__(name, age)
+        self.company = company
+
+    def more_info(self):
+        print(f'{self.name} works in {self.company}')
+
+    def __str__(self):
+        return f'Name: {self.name}'
